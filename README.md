@@ -2,16 +2,17 @@
 
 ![logo](https://raw.githubusercontent.com/6xieapplexia6/XDXResources/master/XDXRatingBar_intro.png)
 <br/><br/>
+![Version](https://img.shields.io/cocoapods/v/XDXRatingBar.svg?style=plastic)
 ![Platform](https://img.shields.io/badge/platform-iOS%208%2B-blue.svg?style=plastic)
 ![Languages](https://img.shields.io/badge/language-swift%20|%20objc-FF69B4.svg?style=plastic)
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)
 
 ## Table of contents - 目录
 * [Introduction](#introduction)
-* [简介](#introductionCHS)
 * [Installation](#installation)
-* [安装说明](#installationCHS)
 * [Tips](#tips)
+* [简介](#introductionCHS)
+* [安装说明](#installationCHS)
 * [使用技巧](#tipsCHS)
 * [Support XDXRatingBar](#support)
 * [Contact](#contact)
@@ -25,21 +26,19 @@ The GitHub repo [XDXRatingBar](https://github.com/6xieapplexia6/XDXRatingBar) wa
 2. The singleton class XDXRatingBarManager can help developers to configure all XDXRatingBar instances globally;
 3. More little enhanced features will be introduced below.
 
-### <a id="introductionCHS"></a>简介
-
-该 GitHub 仓库是基于 [saiwu-bigkoo](https://github.com/saiwu-bigkoo) 的仓库 [iOS-RatingBar](https://github.com/saiwu-bigkoo/iOS-RatingBar) 改编并强化之作，相比 iOS-RatingBar 而言，XDXRatingBar 强化了：
-
-1. @IBDesignable 和 @IBInspectable 可以让开发者设置 XDXRatingBar 的属性并预览 UI 效果；
-2. 为开发者设置全局属性提供了了含单例 shared 的类 XDXRatingBarManager；
-3. 将在使用技巧中介绍更多的加强。
-
 ### <a id="installation"></a>Installation
 The easiest way to install this API on an iOS project is to copy the file XDXRatingBar.swift into the Xcode project folder.
-Cocoapods installation will be available in the future.
 
-### <a id="installationCHS"></a>安装说明
-把 XDXRatingBar 安装到 iOS 项目的最简单的方式可以是直接把 XDXRatingBar.swift 复制到 iOS 项目的 Xcode 项目文件夹中。
-在不久的未来，将支持使用 Cocoapods 安装。
+Cocoapods installation (current version: 1.0.0):
+```Ruby
+target '<your_project>' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  
+  # Pods for <your_project>
+  pod 'XDXRatingBar'
+end
+```
 
 ### <a id="tips"></a>Tips
 
@@ -122,6 +121,28 @@ func ratingDidChange(_ ratingBar: XDXRatingBar, oldRating: CGFloat, newRating: C
 {
     print("ratingDidChange newRating: \(newRating)")
 }
+```
+
+### <a id="introductionCHS"></a>简介
+
+该 GitHub 仓库是基于 [saiwu-bigkoo](https://github.com/saiwu-bigkoo) 的仓库 [iOS-RatingBar](https://github.com/saiwu-bigkoo/iOS-RatingBar) 改编并强化之作，相比 iOS-RatingBar 而言，XDXRatingBar 强化了：
+
+1. @IBDesignable 和 @IBInspectable 可以让开发者设置 XDXRatingBar 的属性并预览 UI 效果；
+2. 为开发者设置全局属性提供了了含单例 shared 的类 XDXRatingBarManager；
+3. 将在使用技巧中介绍更多的加强。
+
+### <a id="installationCHS"></a>安装说明
+把 XDXRatingBar 安装到 iOS 项目的最简单的方式可以是直接把 XDXRatingBar.swift 复制到 iOS 项目的 Xcode 项目文件夹中。
+
+Cocoapods 安装（目前版本 1.0.0）：
+```Ruby
+target '<你的项目名>' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks! 
+
+  # Pods for <你的项目名>
+  pod 'XDXRatingBar'
+end
 ```
 
 ### <a id="tipsCHS"></a>使用技巧

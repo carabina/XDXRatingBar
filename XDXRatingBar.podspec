@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.homepage     = "https://github.com/6xieapplexia6/XDXRatingBar"
-  s.screenshots  = "raw.githubusercontent.com/6xieapplexia6/XDXResources/master/XDXRatingBar_intro.png"
+  s.screenshots  = "https://raw.githubusercontent.com/6xieapplexia6/XDXResources/master/XDXRatingBar_intro.png"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -48,7 +48,7 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "6谢侠6" => "xiechong23@icloud.com" }
-  s.social_media_url   = "https://www.linkedin.com/in/chongx"
+  # s.social_media_url   = "https://www.linkedin.com/in/chongx"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/6xieapplexia6/XDXRatingBar.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/6xieapplexia6/XDXRatingBar.git", :tag => s.version.to_s }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -74,7 +74,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "XDXRatingBar", "XDXRatingBar/**/*.{h,m}"
+  s.source_files  = "XDXRatingBar/*"
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -83,5 +83,40 @@ Pod::Spec.new do |s|
   #
 
   s.framework  = "UIKit"
-
+  s.swift_version = "4.1"
 end
+
+# 版本：1.0.0
+# 时间：2018年4月27日 16:30
+# 
+# pod trunk register xiechong23@icloud.com '6谢侠6'
+# [!] Please verify the session by clicking the link in the verification email that has been sent to xiechong23@icloud.com
+# xiedaxiade-Mac-mini-Late-2014:XDXRatingBar xc$ pod trunk push XDXRatingBar.podspec
+# Updating spec repo `master`
+# warning: inexact rename detection was skipped due to too many files.
+# warning: you may want to set your diff.renameLimit variable to at least 16567 and retry the command.
+# 
+# CocoaPods 1.5.0 is available.
+# To update use: `sudo gem install cocoapods`
+# 
+# For more information, see https://blog.cocoapods.org and the CHANGELOG for this version at https://github.com/CocoaPods/CocoaPods/releases/tag/1.5.0
+# 
+# Validating podspec
+#  -> XDXRatingBar (1.0.0)
+# 
+# Updating spec repo `master`
+# 
+# CocoaPods 1.5.0 is available.
+# To update use: `sudo gem install cocoapods`
+# 
+# For more information, see https://blog.cocoapods.org and the CHANGELOG for this version at https://github.com/CocoaPods/CocoaPods/releases/tag/1.5.0
+# 
+# 
+# --------------------------------------------------------------------------------
+#  🎉  Congrats
+# 
+#  🚀  XDXRatingBar (1.0.0) successfully published
+#  📅  April 27th, 02:28
+#  🌎  https://cocoapods.org/pods/XDXRatingBar
+#  👍  Tell your friends!
+# --------------------------------------------------------------------------------
